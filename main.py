@@ -1,3 +1,1 @@
-a = float(input())
-r = int(input())
-print(f'%.{r}f' % a)
+Angelina Jolie and Leonardo DiCaprio met yesterday in Paris.
