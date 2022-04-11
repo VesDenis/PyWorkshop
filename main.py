@@ -1,3 +1,1 @@
-%
-f-strings
-str.format()
+a, d
