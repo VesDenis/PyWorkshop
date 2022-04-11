@@ -1,4 +1,5 @@
 from random import choice
+####
 
 def dset():
     return [[i, j] for i in range(7) for j in range(i, 7)]
