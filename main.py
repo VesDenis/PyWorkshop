@@ -1,1 +1,3 @@
-Angelina Jolie and Leonardo DiCaprio met yesterday in Paris.
+N = int(input())
+K = int(input())
+print((N + K) * (N - K))
