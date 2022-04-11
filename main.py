@@ -1,5 +1,2 @@
-email = input()
-i = 0
-while email[i] != '@':
-  i += 1
-print(email[:i])
+nums = [i for i in range(5, 101, 5)]
+print(nums)
