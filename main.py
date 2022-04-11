@@ -1,4 +1,2 @@
-film = input()
-director = input()
-relise = input()
-print('{} (dir. {}) came out in {}'.format(film, director, relise))
+word = input()
+print('{} has {} letters'.format(word, len(word)))
