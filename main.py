@@ -1,8 +1,1 @@
-[0:len(sequence):1]
-[0:len(sequence):0]
-[1:len(sequence):1]
-[1:len(sequence):0]
-[0:len(sequence) - 1:1]
-[0:len(sequence) - 1:0]
-[1:len(sequence) - 1:1]
-[1:len(sequence) - 1:0]
+python
