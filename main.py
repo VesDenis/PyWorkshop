@@ -1,2 +1,3 @@
-pi = 3.141592653589793
-print('%.5f' % pi)
+a = float(input())
+r = int(input())
+print(round(a, r))
