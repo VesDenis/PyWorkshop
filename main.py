@@ -20,9 +20,9 @@ def search(a):
     if(len(arr) == 2):
       if (arr[0] > arr[1]):
         return arr[0]
-      else:
-        return arr[1]
-    return arr[len(arr) // 2]
+      return arr[1]
+    else:
+      return arr[len(arr) // 2]
       
 
 a = [randint(1, 20) for _ in range(randint(2, 20))]
