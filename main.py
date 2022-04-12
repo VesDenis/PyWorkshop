@@ -1,3 +1,4 @@
-students = ['Денис', 'Дима', 'Ваня', 'Дима', 'Дима', 'Лёха', 'Вова', 'Вадим', 'Богдан', 'Юра', 'Антон', 'Артем', 'Костя']
-for i, student in enumerate(students, start=1):
-  print('Student{}: {}'.format(i, student))
+s1 = input()
+s2 = input()
+for l1, l2 in zip(s1, s2):
+  print(l1, l2, end='', sep='')
