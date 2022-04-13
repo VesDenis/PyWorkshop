@@ -1,8 +1,9 @@
+a = int(input())
+b = int(input())
+
 try:
-  print("What a beautiful name you have!")
-except NameError:
-  print("Hello, stranger!")
+  result = a / b
+except ZeroDivisionError:
+  print('Error')  # err is exception description
 else:
-  print("Hello,", name)
-finally:  
-  print("Hope to see you soon!")
+  print(result)
