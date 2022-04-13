@@ -1,6 +1,8 @@
 try:
-  name, surname = input().split()
-except ValueError:
-  print('You need to enter exactly 2 words. Try again!')
+  print("What a beautiful name you have!")
+except NameError:
+  print("Hello, stranger!")
 else:
-  print('Welcome to our party, {} {}'.format(name, surname))
+  print("Hello,", name)
+finally:  
+  print("Hope to see you soon!")
