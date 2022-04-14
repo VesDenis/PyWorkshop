@@ -54,8 +54,8 @@ def player_d():
             else:
                 snake.append(pgive.pop(num - 1))
         elif num == 0:
-            print('No piece. Please try again.')
-            player_d()
+            print('You took a piece')
+            pgive.append(stock.pop())
         else:
             num = abs(num)
             if num > len(pgive):
@@ -70,8 +70,12 @@ def computer_d():
         print('Invalid input. Please try again.')
         computer_d()
     else:
-        if randint(0, 1):
+        act = randint(1, 3)
+        if act == 1:
             snake.append(cgive.pop(randint(0, len(cgive) - 1)))
+        elif act == 2:
+            print('The computer took a piece')
+            cgive.append(stock.pop())
         else:
             snake.insert(0, cgive.pop(randint(0, len(cgive) - 1)))
 
