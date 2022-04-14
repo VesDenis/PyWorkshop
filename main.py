@@ -23,8 +23,9 @@ def game():
     while True:
         print('Stock pieces:', len(stock))
         print('Computer pieces:', len(cgive))
-        print(snake)
-        print('Your pieces:')
+        for i in range(len(snake)):
+            print(snake[i], end=' ')
+        print('\nYour pieces:')
         for i, piece in enumerate(pgive, start=1):
             print(i, piece)
         if snake[0][0] == snake[-1][1] and sum(snake, []).count(snake[0][0]) == 8 and len(snake) != 1:
@@ -52,6 +53,9 @@ def player_d():
                 player_d()
             else:
                 snake.append(pgive.pop(num - 1))
+        elif num == 0:
+            print('No piece. Please try again.')
+            player_d()
         else:
             num = abs(num)
             if num > len(pgive):
