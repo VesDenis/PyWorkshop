@@ -46,7 +46,19 @@ def player_d():
         print('Invalid input. Please try again.')
         player_d()
     else:
-        snake.append(pgive.pop(num - 1))
+        if num > 0:
+            if num > len(pgive):
+                print('No piece. Please try again.')
+                player_d()
+            else:
+                snake.append(pgive.pop(num - 1))
+        else:
+            num = abs(num)
+            if num > len(pgive):
+                print('No piece. Please try again.')
+                player_d()
+            else:
+                snake.insert(0, pgive.pop(num - 1))
 
 def computer_d():
     enter = input()
@@ -54,7 +66,10 @@ def computer_d():
         print('Invalid input. Please try again.')
         computer_d()
     else:
-        snake.append(cgive.pop(randint(0, len(cgive) - 1)))
+        if randint(0, 1):
+            snake.append(cgive.pop(randint(0, len(cgive) - 1)))
+        else:
+            snake.insert(0, cgive.pop(randint(0, len(cgive) - 1)))
 
 def turn():
     global start
