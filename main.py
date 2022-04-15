@@ -1,14 +1,22 @@
-class WordError(Exception):
-  def __init__(self):
-    self.message = 'This is your Exception message!'
-    super().__init__(self.message)
+class NotInBoundsError(Exception):
+  def __str__(self):
+    return 'There is an error!'
 
-def check_w_letter(word, letter):
-  if letter in word:
-    raise WordError
+def error_handling(func):
+  def wrapper(*args):
+    try:
+      n = func(*args)
+    except NotInBoundsError as err:
+      print(err)
+    else:
+      return n
+  return wrapper
+
+@error_handling
+def check_integer(num):
+  if 45 < num < 67:
+    raise NotInBoundsError
   else:
-    print(word)
+    print(num)
 
-letter = input()
-word = input()
-check_w_letter(word, letter)
+check_integer(44)
