@@ -12,6 +12,4 @@ def get_prime_divs(n):
   return res
 
 n = 999_999_999
-start = perf_counter()
 print(get_prime_divs(n))
-print(perf_counter() - start)
