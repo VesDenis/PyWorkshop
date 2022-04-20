@@ -1,3 +1,3 @@
-a = [i ** 2 for i in range(1, int(input()) + 1)]
+a = [i * 2 for i in range(int(input()))]
 for n in a:
   print(n)
