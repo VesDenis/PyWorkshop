@@ -1,1 +1,1 @@
-IP address
+my_sock.connect((ip, port))
